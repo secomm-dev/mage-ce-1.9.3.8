@@ -27,14 +27,14 @@
 /* @var $installer Mage_Core_Model_Resource_Setup */
 $installer = $this;
 
-$installer->startSetup();
-$connection = $installer->getConnection();
+#$installer->startSetup();
+#$connection = $installer->getConnection();
 
-$connection->delete(
-    $this->getTable('core_config_data'),
-    $connection->prepareSqlCondition('path', array(
-        'like' => 'dev/template/allow_symlink'
-    ))
-);
+#$connection->delete(
+#    $this->getTable('core_config_data'),
+#    $connection->prepareSqlCondition('path', array(
+#        'like' => 'dev/template/allow_symlink'
+#    ))
+#);
 
 $installer->endSetup();
